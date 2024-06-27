@@ -16,6 +16,7 @@ module Prefatory
     setting :primary_uuid, :primary_uuid
   end
   setting :storage do
+    setting :redis_client
     setting :provider # :memcached or :redis
     setting :options
     setting :marshaler, Marshal
